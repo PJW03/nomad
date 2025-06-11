@@ -8,10 +8,8 @@ export default function App() {
   return (
     <SafeAreaView style={styles.safeArea}>
       <View style={styles.container}>
-        {/* 스크롤 가능한 메인 콘텐츠 */}
         <ScrollView contentContainerStyle={styles.scrollContent}>
           <View style={styles.card}>
-            {/* 토스뱅크 영역 */}
             <Text style={styles.title}>토스뱅크</Text>
             <View style={styles.accountRow}>
               <View>
@@ -62,7 +60,6 @@ export default function App() {
               <Text style={styles.cardPay}>11,400원</Text>
             </View>
 
-            {/* 신용점수 및 추천 영역 */}
             <View style={styles.divider} />
             <View style={styles.creditRow}>
               <Text style={styles.creditLabel}>내 신용점수</Text>
@@ -89,7 +86,6 @@ export default function App() {
           </View>
         </ScrollView>
 
-        {/* 하단 고정 탭 */}
         <View style={styles.footer}>
           <TouchableOpacity style={styles.footerBtn}>
             <Text style={styles.footerText}>홈</Text>
@@ -114,7 +110,7 @@ const styles = StyleSheet.create({
   container: { flex: 1 },
   scrollContent: {
     padding: 16,
-    paddingBottom: FOOTER_HEIGHT + 24, // footer와 겹치지 않게 여유
+    paddingBottom: FOOTER_HEIGHT + 24,
     minHeight: SCREEN_HEIGHT,
   },
   card: {
